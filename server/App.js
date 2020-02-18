@@ -17,7 +17,7 @@ var cors = require("cors");
 app.use(cors());
 mongoose
 	.connect(
-		"mongodb+srv://tester:12345@gs-vfeo1.mongodb.net/steam?retryWrites=true&w=majority",
+		"mongodb+srv://tester:madeYouLook@gs-vfeo1.mongodb.net/steam?retryWrites=true&w=majority",
 		{ useNewUrlParser: true, useUnifiedTopology: true }
 	)
 	.then(console.log("Database connected..."))
