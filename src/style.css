@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1b2838;
+  color: white;
+}
+
+.wrapper {
+  min-height: 800px;
+  width: 870px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  border-radius: 1.2em;
+  -webkit-box-shadow: -6px -6px 6px 0 black, 12px 12px 12px 0 rgba(0, 0, 0, 0.39);
+          box-shadow: -6px -6px 6px 0 black, 12px 12px 12px 0 rgba(0, 0, 0, 0.39);
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 700px;
+  height: 700px;
+  margin: 0px auto;
+}
+
+.container form {
+  margin: 10px auto;
+  width: 255px;
+  height: 400px;
+  text-align: center;
+}
+
+.container form input {
+  background-color: #26264e;
+  height: 25px;
+  width: 250px;
+  margin: 10px auto;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.container form button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 0.4rem;
+  background-color: #26264e;
+  color: white;
+  width: 140px;
+}
+
+.container .cart {
+  width: 550px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+}
+
+.container .cart button {
+  position: relative;
+  left: 50px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 0.4rem;
+  background-color: #26264e;
+  color: white;
+  width: 40px;
+}
+
+.container .cart .last {
+  width: 140px;
+}
+
+.container .cart .empty {
+  text-align: center;
+}
+
+.container .cart .first-td {
+  width: 158px;
+}
+
+.container .cart .checkout-td {
+  width: 158px;
+  height: 30px;
+  text-align: center;
+}
+
+.container .cart .checkout-total {
+  border-top: 1px solid grey;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  width: 900px;
+  margin: 20px auto 30px auto;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  font-size: 1.4rem;
+  padding: 30px 55px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-more {
+  width: 900px;
+  margin: 20px auto 30px auto;
+}
+
+.navbar-more ul {
+  list-style-type: none;
+}
+
+.navbar-more ul li {
+  display: inline;
+}
+
+.navbar-more ul li a {
+  font-size: 1.4rem;
+  padding: 30px 35px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-more ul li a:hover {
+  text-decoration: underline;
+}
+
+.newsItem {
+  height: 150px;
+}
+
+.newsItem h4 {
+  position: relative;
+  top: 25px;
+  text-decoration: underline;
+}
+
+.newsItem h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.newsItem .news-text {
+  width: 500px;
+  position: relative;
+  left: 300px;
+  top: -100px;
+}
+
+.commentListItem {
+  position: relative;
+  left: 10px;
+  border-left: 1px solid grey;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.commentListItem .fat {
+  padding: 10px;
+  font-weight: 900;
+}
+
+.non-auth-com {
+  color: red;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.create-comment {
+  padding: 20px;
+}
+
+.create-comment textarea {
+  background-color: #26264e;
+  color: white;
+  padding: 10px;
+  width: 830px;
+  min-height: 60px;
+  font-size: 1.1rem;
+}
+
+.create-comment button {
+  position: relative;
+  left: 750px;
+  padding: 5px 10px;
+  border-radius: 0.3em;
+  font-size: 1.1rem;
+  width: 100px;
+}
+
+.store {
+  scrollbar-color: red;
+}
+
+.store h2 {
+  margin-bottom: 10px;
+}
+
+.gameListing .gameListItem {
+  margin: 20px;
+  background-color: rgba(38, 38, 78, 0.4);
+  -webkit-box-shadow: -4px -4px 4px 0 #383f5a, 4px 4px 4px 0 rgba(0, 0, 0, 0.39);
+          box-shadow: -4px -4px 4px 0 #383f5a, 4px 4px 4px 0 rgba(0, 0, 0, 0.39);
+  height: 180px;
+  width: 790px;
+}
+
+.gameListing .gameListItem h3 {
+  margin-bottom: 25px;
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+
+.gameListing .gameListItem img {
+  position: relative;
+  left: 10px;
+}
+
+.gameListing .gameListItem .game {
+  position: relative;
+  left: 250px;
+  top: -104px;
+  width: 400px;
+  font-size: 1.1rem;
+}
+
+.gameListing .gameListItem button {
+  position: relative;
+  left: 220px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 0.4rem;
+  background-color: #26264e;
+  color: white;
+  width: 140px;
+}
+/*# sourceMappingURL=style.css.map */
