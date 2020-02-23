@@ -173,11 +173,13 @@ body {
 .commentListItem {
   position: relative;
   left: 10px;
+  width: 35vw;
   border-left: 1px solid grey;
   padding-top: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 20px 20px 0;
   padding-left: 20px;
   padding-bottom: 10px;
 }
@@ -201,29 +203,32 @@ body {
   background-color: #26264e;
   color: white;
   padding: 10px;
-  width: 830px;
+  width: 35vw;
   min-height: 60px;
   font-size: 1.1rem;
 }
 
 .create-comment button {
   position: relative;
-  left: 750px;
+  left: 31vw;
   padding: 5px 10px;
   border-radius: 0.3em;
   font-size: 1.1rem;
   width: 100px;
 }
 
-.store {
-  scrollbar-color: red;
-}
-
 .store h2 {
   margin-bottom: 10px;
 }
 
-.gameListing .gameListItem {
+.gameListing .gameListingMiddle {
+  width: 850px;
+  height: 800px;
+  margin: auto;
+}
+
+.gameListing .gameListingMiddle .gameListItem {
+  padding-left: 20px;
   margin: 20px;
   background-color: rgba(38, 38, 78, 0.4);
   -webkit-box-shadow: -4px -4px 4px 0 #383f5a, 4px 4px 4px 0 rgba(0, 0, 0, 0.39);
@@ -232,19 +237,19 @@ body {
   width: 790px;
 }
 
-.gameListing .gameListItem h3 {
+.gameListing .gameListingMiddle .gameListItem h3 {
   margin-bottom: 25px;
   position: relative;
-  left: 25px;
-  top: 10px;
+  left: 10px;
+  top: 20px;
 }
 
-.gameListing .gameListItem img {
+.gameListing .gameListingMiddle .gameListItem img {
   position: relative;
   left: 10px;
 }
 
-.gameListing .gameListItem .game {
+.gameListing .gameListingMiddle .gameListItem .game {
   position: relative;
   left: 250px;
   top: -104px;
@@ -252,14 +257,121 @@ body {
   font-size: 1.1rem;
 }
 
-.gameListing .gameListItem button {
+.gameListing .gameListingMiddle .gameListItem .gameRight {
   position: relative;
-  left: 220px;
+  left: 520px;
+  width: 200px;
+  top: -180px;
+}
+
+.gameListing .gameListingMiddle .gameListItem button {
+  position: relative;
+  left: -10px;
   margin: 5px;
   padding: 5px;
   border-radius: 0.4rem;
   background-color: #26264e;
   color: white;
   width: 140px;
+  display: block;
+}
+
+.checkoutForm .checkoutFormLeft {
+  position: relative;
+  left: -150px;
+}
+
+.checkoutForm .checkoutFormRight {
+  position: relative;
+  top: -134px;
+  left: 130px;
+}
+
+.checkoutForm .checkoutFormRight input {
+  height: 93px;
+  padding: 0;
+}
+
+.checkoutForm button {
+  position: relative;
+  top: -130px;
+  left: 180px;
+}
+
+@media only screen and (max-width: 970px) {
+  .navbar {
+    width: 90vw;
+  }
+  .wrapper {
+    width: 90vw;
+  }
+  .wrapper .container {
+    width: 85vw;
+  }
+  .wrapper .gameListing {
+    width: 90vw;
+  }
+  .wrapper .gameListing .gameListingMiddle {
+    width: 85vw;
+  }
+  .wrapper .gameListing .gameListingMiddle .gameListItem {
+    padding-left: 0;
+    width: 80vw;
+  }
+  .wrapper .gameListing .gameListingMiddle .gameListItem .gameRight {
+    left: 450px;
+  }
+  .newsWrapper {
+    width: 90vw;
+  }
+  .newsWrapper .newsItem {
+    width: 80vw;
+  }
+  .newsWrapper .newsItem .news-text {
+    width: 50vw;
+  }
+  .newsWrapper .commentListItem {
+    width: 70vw;
+  }
+  .newsWrapper .create-comment input {
+    width: 70%;
+  }
+  .newsWrapper .create-comment button {
+    position: relative;
+    left: 26vw;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar,
+  .navbar-more {
+    width: 90vw;
+  }
+  .navbar ul li a,
+  .navbar-more ul li a {
+    font-size: 1.1rem;
+    padding: 20px 4vw;
+    margin: 20px auto;
+  }
+  .create-comment input {
+    width: 20%;
+  }
+  .create-comment button {
+    position: relative;
+    left: 95vw;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .navbar,
+  .navbar-more {
+    width: 90vw;
+  }
+  .navbar ul li a,
+  .navbar-more ul li a {
+    font-size: 1.1rem;
+    padding: 30px 3vw;
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

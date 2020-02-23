@@ -7,7 +7,7 @@ import InfiniteLoading from "react-simple-infinite-loading";
 function GameListing(props, { fetchMore, hasMore }) {
 	return (
 		<div className="gameListing">
-			<div style={{ width: 850, height: 800, margin: "auto" }}>
+			<div className="gameListingMiddle">
 				<InfiniteLoading
 					hasMoreItems={hasMore}
 					itemHeight={200}
@@ -28,6 +28,11 @@ function GameListing(props, { fetchMore, hasMore }) {
 									media => media.steam_appid === game.appid
 								)[0]
 							}
+							about={
+								props.about.about.filter(
+									about => about.steam_appid === game.appid
+								)[0]
+							}
 						/>
 					))}
 				</InfiniteLoading>
@@ -39,7 +44,8 @@ function GameListing(props, { fetchMore, hasMore }) {
 function mapStateToProps(state) {
 	return {
 		cart: state.cart,
-		media: state.media
+		media: state.media,
+		about: state.about
 	};
 }
 

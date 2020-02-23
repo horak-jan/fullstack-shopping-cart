@@ -15,9 +15,6 @@ const OrderSchema = new Schema({
 	message: {
 		type: String
 	},
-	gift: {
-		type: Boolean
-	},
 	cart: []
 });
 

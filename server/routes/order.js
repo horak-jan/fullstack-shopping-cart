@@ -9,7 +9,6 @@ router.post("/", (req, res) => {
 		name: req.body.order.name,
 		cart: req.body.cart,
 		email: req.body.order.email,
-		gift: req.body.order.gift,
 		message: req.body.order.message
 	});
 

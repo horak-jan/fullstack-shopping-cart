@@ -14,9 +14,12 @@ export default function GameListItem(props) {
 			/>
 			<div className="game">
 				<div>Developed by {props.game.developer}</div>
-				<div>${props.game.price}</div>
 
+				<div>${props.game.price}</div>
 				<p>{props.game.positive_ratings} positive ratings</p>
+				<p>{props.game.negative_ratings} negative ratings</p>
+			</div>
+			<div className="gameRight">
 				<AddButton
 					addToCart={props.addToCart}
 					cartItem={props.cartItem}
