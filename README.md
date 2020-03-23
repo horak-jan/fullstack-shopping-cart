@@ -1,4 +1,4 @@
-Full stack shopping cart created with React & Redux on a front-end, Node.js, Express & MongoDb on back-end, using with create-react-app.
+Full stack shopping cart.
 
 1. git clone
 2. npm install, then cd server/ and npm install
